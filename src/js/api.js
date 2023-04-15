@@ -15,4 +15,12 @@ export default class Api {
 
     return res.data.results;
   }
+
+  async fetchGenresList() {
+    const res = await axios.get(
+      `${this.BASE_URL}3/genre/movie/list?api_key=${this.KEY}`
+    );
+
+    return res.data.genres;
+  }
 }
