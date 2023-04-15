@@ -1,0 +1,10 @@
+{{#each this}}
+  <li class='card-list__item' data-action='{{id}}'><div class='img-thumb'><img
+        src='https://image.tmdb.org/t/p/w500/{{poster_path}}'
+        alt='{{title}}'
+      /></div>
+    <h2 class='card-list__title'>{{title}}</h2><p class='card-list__text'><span
+      >{{genre_ids}}</span>
+      |
+      <span>{{release_date}}</span></p></li>
+{{/each}}
