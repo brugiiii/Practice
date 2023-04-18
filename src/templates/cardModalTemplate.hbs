@@ -1,0 +1,57 @@
+<div class='cardModal'>
+  <button class='cardModal__closeBtn'><svg
+      class='cardModal__icon-close'
+      width='30'
+      height='30'
+      viewBox='0 0 30 30'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <path d='M8 8L22 22' stroke='black' stroke-width='2'></path>
+      <path d='M8 22L22 8' stroke='black' stroke-width='2'></path>
+    </svg>
+  </button>
+  <div class='cardModal__img-thumb'>
+    <img
+      src='{{poster}}'
+      alt='{{title}}'
+      srcset='{{srcset}}'
+      sizes='(min-width:
+      1280px)
+      375px,
+      (min-width:
+      768px)
+      264px,
+      240px'
+    />
+  </div>
+  <div class='moda-right'>
+    <h2 class='cardModal__title'>{{title}}</h2>
+    <ul class='card-info'>
+      <li class='card-info__item'>
+        <p class='card-info__key'>Vote / Votes</p>
+        <p class='card-info__value card-info__value--line-heigth'><span
+            class='vote'
+          >{{vote}}</span><span class='slash'>
+            /
+          </span>{{vote_count}}</p>
+      </li>
+      <li class='card-info__item'>
+        <p class='card-info__key'>Popularity</p>
+        <p class='card-info__value'>{{slicedPopularity}}</p>
+      </li>
+      <li class='card-info__item'>
+        <p class='card-info__key'>Original Title</p>
+        <p class='card-info__value title'>{{original_title}}</p>
+      </li>
+      <li class='card-info__item'>
+        <p class='card-info__key'>Genre</p>
+        <p class='card-info__value'>{{genresNames}}</p>
+      </li>
+    </ul>
+
+    <h3 class='about-title'>About</h3>
+    <p class='about-text'>{{overview}}</p>
+    <ul class='cardModal__btn-list'><button class='btn watched active'>add to
+        Watched</button><button class='btn queue'>add to queue</button></ul></div>
+</div>

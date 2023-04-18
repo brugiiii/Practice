@@ -23,4 +23,12 @@ export default class Api {
 
     return res.data.genres;
   }
+
+  async fetchById(id) {
+    const res = await axios.get(
+      `https://api.themoviedb.org/3/movie/${id}?api_key=${this.KEY}&language=en-US`
+    );
+
+    return res.data;
+  }
 }

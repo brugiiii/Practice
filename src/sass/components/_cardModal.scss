@@ -1,0 +1,149 @@
+.cardModal {
+  position: relative;
+
+  width: 280px;
+  height: 80%;
+
+  padding: 48px 20px 40px;
+  margin: 0 auto;
+
+  overflow: scroll;
+  background-color: $white-color;
+
+  @media screen and(min-width:768px) {
+    display: flex;
+    gap: 68px;
+
+    padding: 40px 72px 64px 36px;
+
+    width: 704px;
+    height: auto;
+
+    overflow: visible;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 806px;
+    padding: 40px 12px;
+
+    gap: 16px;
+  }
+}
+
+.cardModal__img-thumb {
+  margin-bottom: 20px;
+
+  width: 240px;
+  height: 357px;
+
+  border-radius: 5px;
+  overflow: hidden;
+
+  @media screen and(min-width:768px) {
+    flex: none;
+
+    width: 264px;
+    height: 374px;
+
+    margin-bottom: 0;
+  }
+
+  @media screen and(min-width:1280px) {
+    width: 375px;
+    height: 478px;
+  }
+}
+
+.cardModal__title {
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: calc(23 / 20);
+
+  text-transform: uppercase;
+
+  @media screen and(min-width:1280px) {
+    font-size: 30px;
+    line-height: calc(35 / 30);
+  }
+}
+
+.card-info {
+  margin-bottom: 20px;
+}
+
+.card-info__item {
+  display: flex;
+
+  font-weight: 500;
+  line-height: calc(16 / 12);
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.card-info__key {
+  flex: none;
+
+  width: 100px;
+
+  color: $modal-text-color;
+}
+
+.card-info__value.title {
+  text-transform: uppercase;
+}
+
+.card-info__value--line-heigth {
+  line-height: calc(14 / 12);
+}
+
+.card-info__key,
+.card-info__value {
+  margin: 0;
+}
+
+.slash {
+  color: $modal-text-color;
+  line-height: calc(16 / 12);
+}
+
+.vote {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 36px;
+  height: 16px;
+
+  border-radius: 5px;
+  color: $white-color;
+  background-color: $accent-color;
+}
+
+.about-title {
+  margin-bottom: 8px;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  line-height: calc(16 / 12);
+}
+
+.about-text {
+  margin-bottom: 20px;
+
+  font-weight: 500;
+  line-height: calc(20 / 12);
+}
+
+.cardModal__btn-list {
+  display: flex;
+  justify-content: space-between;
+
+  @media screen and(min-width:1280px) {
+    justify-content: flex-start;
+    gap: 8px;
+  }
+}

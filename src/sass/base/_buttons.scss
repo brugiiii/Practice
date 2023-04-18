@@ -72,3 +72,67 @@
   border: none;
   background-color: transparent;
 }
+
+.cardModal__closeBtn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+
+  padding: 0;
+
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.card-modal__btn {
+  font-weight: 500;
+  line-height: calc(14 / 12);
+
+  background-color: transparent;
+  color: $accent-color;
+  border: 1px solid $accent-color;
+  border-radius: 100px;
+}
+
+.btn.watched {
+  padding: 0 11px;
+
+  @media screen and(min-width:768px) {
+    padding: 0 17px;
+  }
+
+  @media screen and(min-width:1280px) {
+    padding: 0 31px;
+  }
+}
+
+.btn.queue {
+  padding: 0 13px;
+
+  @media screen and(min-width:768px) {
+    padding: 0 17px;
+  }
+
+  @media screen and(min-width:1280px) {
+    padding: 0 23px;
+  }
+}
+
+.btn.watched,
+.btn.queue {
+  background-color: transparent;
+  color: $accent-color;
+  border: 1px solid $black-color;
+  box-shadow: 0px 0px 7px rgba(27, 27, 27, 0.15);
+}
+
+.btn.watched.active,
+.btn.queue.active {
+  background-color: $accent-color;
+  color: $white-color;
+  border-color: transparent;
+}
